@@ -3,7 +3,7 @@ import streamlit as st
 import plotly.express as px
 
 # -- set my web page -- 
-st.set_page_config(page_title='Moshe Khorshidi home test app dashboard',
+st.set_page_config(page_title='Moshe Khorshidi Inventory Stock Web Dashboard',
                    page_icon=':star:',
                    layout='wide') # wide window for my app 
 
