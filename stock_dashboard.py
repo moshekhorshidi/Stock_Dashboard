@@ -13,17 +13,11 @@ st.set_page_config(page_title='Moshe Khorshidi home test app dashboard',
 # for better usage i'll cash the data
 
 @st.cache_data
-def dataframe_cashed_read(file):
-    data = pd.read_csv(file)
+def dataframe_cashed_read():
+    data = pd.read_csv('result_data.csv')
     return data
 
 # one time read to cash
-
-user_input_file = st.sidebar.file_uploader("Upload Result_Data.csv Data file")
-if user_input_file is None:
-    st.info("Please Upload result_data.csv file provided")
-    st.stop()
-
 df = dataframe_cashed_read(user_input_file)
 
 # -- data type convert 
