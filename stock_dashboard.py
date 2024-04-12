@@ -85,11 +85,10 @@ with right_column:
      st.subheader(f"Medien of Stock: {med_total_stock:,}")
      st.markdown("##")
 
-st.write("---")
+st.subheader("Data Preview")
 # see df on app
 with st.expander("***Click to see Data Preview - Click again to close***"):
-    st.dataframe(df_selected)
-st.write("---")
+    st.table(df_selected)
 
 
 with left_column:
