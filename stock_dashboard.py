@@ -2,7 +2,6 @@ import pandas as pd
 import streamlit as st 
 import plotly.express as px
 
-
 # -- set my web page -- 
 st.set_page_config(page_title='Moshe Khorshidi home test app dashboard',
                    page_icon=':star:',
@@ -18,7 +17,7 @@ def dataframe_cashed_read():
     return data
 
 # one time read to cash
-df = dataframe_cashed_read(user_input_file)
+df = dataframe_cashed_read()
 
 # -- data type convert 
 df['SEASONAL_DATE_TO_ANALYZE'] = pd.to_datetime(df['SEASONAL_DATE_TO_ANALYZE']).dt.date
