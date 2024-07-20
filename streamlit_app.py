@@ -65,7 +65,7 @@ df_selected = df.query(
 )
 
 # -- page title
-st.title(":star: Moshe Khorshidi Home Task")
+st.title(":star: Moshe Khorshidi Stock Web Dashboard")
 st.markdown("##")
 
 # -- top boolets numbers
